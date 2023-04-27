@@ -6,10 +6,10 @@ const {errorHandler} = require('./errorHandler');
 app.use(express.json());
 
 app.post('/', SaladController.createSalad);
-app.get('/');
-app.get('/:saladId');
-app.patch('/:saladId');
-app.delete('/:saladId');
+app.get('/', SaladController.getAllSalads);
+app.get('/:saladId',SaladController.getSalad);
+app.patch('/:saladId', SaladController.updateSalad);
+app.delete('/:saladId', SaladController.deleteSalad);
 
 app.use(errorHandler);
 

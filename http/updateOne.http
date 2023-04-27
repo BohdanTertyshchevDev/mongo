@@ -1,0 +1,6 @@
+PATCH  http://localhost:5000/644a85608b0f05256f2a97df HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "salad s kapystoyu"
+}
